@@ -244,8 +244,10 @@ export default function Home({ datiArticoli }) {
     <Layout>
       <LandingHero
         opacity={0.5}
-        title="Centro di Formazione Professionale don Bosco"
-        description="Diventa adulto con il metodo educativo di don Bosco preparandoti ad entrare a testa alta nel mondo professionale di domani!"
+        title="Vivi l'ultima esperienza #DreamsIsland con noi!"
+        description="Dalle giostre emozionanti agli spettacoli accattivanti, il nostro parco divertimenti è il luogo perfetto per realizzare i tuoi sogni. 🎢🎡
+        Vieni a esplorare Ons Island e preparati per una giornata indimenticabile di divertimento e avventura. 🤩⁣⁣
+        Creiamo ricordi magici insieme a #DreamsIsland. Tagga un amico e inizia a pianificare il tuo prossimo viaggio oggi stesso!"
         buttonUrl='j'
         buttonText="Guarda il video"
         imageUrl="/images/home/matteo_attacco_hacker.jpg"
