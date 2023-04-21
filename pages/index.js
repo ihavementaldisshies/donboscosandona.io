@@ -153,40 +153,27 @@ let members = [
 
 let settori = [
   {
-    title: "Elettrico",
-    category: "QUALIFICA DI OPERATORE ELETTRICO",
+    title: " OPEN 1 GIORNO",
+    category: "Massima flessibilità : acquista ed entra Dreams-Island",
     description: "Installa ed effettua la manutenzione di impianti civili e industriali, sia con tecnologie tradizionali che automatizzate. Realizza la programmazione dei componenti domotici e dei controllori programmabili industriali.",
-    immagineUrl: "https://www.donboscosandona.it/img/column/42480c58c90ada8ff75c443fdde83ae71fea75ac.jpg?1539529685",
+    immagineUrl: "https://www.acquaticapark.it/wp-content/uploads/2017/04/Foto-Acquatica-2016-Videoclip-044_foam-600x403.jpg",
     url: "/elettrico"
   },
   {
-    title: "Energia",
-    category: "QUALIFICA DI OPERATORE DI IMPIANTI TERMO-IDRAULICI",
+    title: "OPEN 2 GIORNI ",
+    category: "Raddoppia il divertimento e risparmia ! ",
     description: "Interviene nell'installazione, collaudo e manutenzione di impianti termici, idraulici, di condizionamento e fotovoltaici, con una particolare attenzione al risparmio energetico, anche grazie alla building automation.",
-    immagineUrl: "https://www.donboscosandona.it/img/column/417afaa0f0697f0f0aabf9ccf61030769cb76f14.jpg?1539529180",
+    immagineUrl: "https://www.campingsalon.com/wp-content/uploads/2017/05/la-marina-3.jpg",
     url: "/energia"
   },
   {
-    title: "Informatico",
-    category: "DIPLOMA DI TECNICO INFORMATICO",
+    title: "SPECIAL LIMITED",
+    category: "Miglior prezzo garantito ! ",
     description: "Installa e configura hardware e software, esegue la manutenzione di sistemi, reti e terminali utente, fornisce assistenza tecnica, effettua l'elaborazione e la manutenzione di dati su archivi digitali. Con il quarto anno in Sistema Duale diventa tecnico sviluppatore di Soluzioni Software.",
-    immagineUrl: "https://www.donboscosandona.it/img/column/97f264e9d16a0856dd2cb973630af1cac4426f73.jpg?1539529314",
+    immagineUrl: "https://www.camping-bellaitalia.it/inc/scripts/source/www.camping-bellaitalia.it/crp767x450-sf-acquapark.jpg?v=1681827398",
     url: "/informatico"
   },
-  {
-    title: "Meccanico",
-    category: "DIPLOMA DI TECNICO PER LA CONDUZIONE E LA MANUTENZIONE DI IMPIANTI AUTOMATIZZATI",
-    description: "Realizza lavorazioni al tornio, fresatrice e macchine utensili in generale. Partendo dal progetto realizzato con il CAD effettua la programmazione delle macchine a controllo numerico. Realizza saldature ad arco, TIG, MAG, taglio al plasma.",
-    immagineUrl: "https://www.donboscosandona.it/img/column/b0bd034769ac3471bf375239f1e64e39f5684aa6.jpg?1539523300",
-    url: "/meccanico"
-  },
-  {
-    title: "Motoristico / Carrozzeria",
-    category: "QUALIFICA DI OPERATORE ALLA RIPARAZIONE DI VEICOLI A MOTORE",
-    description: "Effettua riparazioni e manutenzione dei motori e dell'autoveicolo in tutte le sue parti. Effettua diagnosi e prove sui gas di scarico intervenendo per risolvere le anomalie.",
-    immagineUrl: "https://www.donboscosandona.it/img/column/342f349c6bb5bbf9a37b95353df2bee2309b9792.jpg?1539524741",
-    url: "/motoristico"
-  },
+  
 ]
 
 let postInEvidenza = {
@@ -199,16 +186,16 @@ let postInEvidenza = {
 
 const testimonials = [
   {
-    name: "Michele Venturato",
-    imageUrl: "https://i.postimg.cc/3NMjxmcp/Screenshot-2023-03-19-alle-16-36-15.png",
-    text: "Grande scuola. Una vera scuola professionale e morale. Sforna ogni anno moltissimi tecnici aggiornati con I tempi e in grado di integrarsi con facilita' nel mondo del lavoro. Complimenti a tutto il sistema.",
-    social: "@Google"
+    name: "Roberta Carletti",
+    imageUrl: "https://st.depositphotos.com/1000686/3738/i/950/depositphotos_37383675-stock-photo-portrait-of-a-young-beautiful.jpg",
+    text: "Siamo appena tornati da Dreams Island e abbiamo trascorso una giornata fantastica! Il parco acquatico è molto ben tenuto e pulito, con una vasta gamma di scivoli e giochi acquatici per tutte le età. Il personale è stato molto gentile e disponibile, rendendo l'esperienza ancora più piacevole. Consiglio vivamente questo parco acquatico a chiunque cerchi una giornata divertente sotto il sole!",
+    social: " Recensioni Google"
   },
   {
-    imageUrl: "/images/home/recensioni/bob.png",
-    name: "Daniele Mladenovic",
-    text: "Ho trascorso alcuni anni presso il CFP e ho trovato l'ambiente molto accogliente e confortevole, grazie alla disponibilità di tutto il personale. In particolare, ho apprezzato la passione degli insegnanti, che si sono dimostrati molto competenti. Inoltre, ho avuto l'opportunità di partecipare ad attività extracurricolari e progetti che mi hanno permesso di sviluppare le mie capacità. Infine, consiglio questo istituto sottolineando l'importanza dello sviluppo e della scoperta dei propri talenti che è ciò che ci rende unici.",
-    social: "@BOBTEK"
+    imageUrl: "https://archzine.it/wp-content/uploads/2018/02/idea-tagli-uomo-corto-lati-ciuffo-lungo-camicia-bianca-giacca-scura-orologio.jpg",
+    name: "Mirco Dalla",
+    text: "Ho portato la mia famiglia a Dreams Island per il compleanno di mio figlio e siamo stati tutti entusiasti. Ci sono molti scivoli divertenti a cui siamo riusciti a saltare la fila grazie alla prenotazione anticipata. Anche i servizi del parco erano eccellenti, con spogliatoi puliti e grandi collocazioni per le borse. Il cibo disponibile era anche buono e abbiamo apprezzato molto la vasta selezione. Dreams Island è sicuramente un parco acquatico da visitare quando si è nella zona.",
+    social: "Recensioni Google"
   },
   {
     imageUrl: "https://i.ibb.co/dpQrpNt/img3.jpg",
@@ -252,8 +239,7 @@ export default function Home({ datiArticoli }) {
         Creiamo ricordi magici insieme a #DreamsIsland. Tagga un amico e inizia a pianificare il tuo prossimo viaggio oggi stesso!
         
         "
-        buttonUrl='j'
-        imageUrl="/images/home/matteo_attacco_hacker.jpg"
+        imageUrl="https://static.secureholiday.net/static/CMS/photos/000/023/000023989.jpg?format=webp"
       />
       <Container maxWidth="lg" sx={{ marginTop: '3rem', marginBottom: '3rem' }}>
         <Grid container spacing={4}>
@@ -268,8 +254,8 @@ export default function Home({ datiArticoli }) {
       </Container>
       <Carousel slides={slides} />
       <Products
-        title="I settori"
-        description="Un'ampia scelta di indirizzi professionali: scopri quello che ti accende di più!"
+        title="OFFERTE DELLA SETTIMANA"
+        description="Le nostre offerte della settimana per puntare al risparmio !"
         cardWidth={4}
         products={settori}
       />
