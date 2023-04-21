@@ -15,6 +15,7 @@ import Certifications from '@/components/Certifications'
 import Maps from '/components/Maps'
 
 import { getDatiArticoli } from '/lib/articoli'
+import Paragraph from '@/components/Paragraph'
 
 // I punti di forza
 const features = [
@@ -44,109 +45,58 @@ const features = [
 // slides per il carousel
 let slides = [
   {
-    titolo: 'Fatti un bel giro',
-    descrizione: 'Scopri tutti i segreti del nostro Centro con il tour virtuale!',
-    immagine: '/images/news/virtual-tour.jpeg'
+    titolo: 'Il nostro menu',
+    descrizione: 'Il nostro fantastico menu 100% con ingredienti spagnoli ',
+    immagine: 'https://static.vecteezy.com/ti/vettori-gratis/p3/13612649-spagnolo-cibo-cucina-menu-ristorante-con-vario-di-tradizionale-piatto-ricetta-su-piatto-cartone-animato-mano-disegnato-modelli-illustrazione-vettoriale.jpg'
   },
   {
-    titolo: 'Progetto GIVE',
-    descrizione: "Il 15 e 16 maggio il nostro Centro ospiterà l'edizione 2023 di GIVE (GROHE Installer Vocational Training and Education), il programma di formazione dedicato ai giovani installatori idraulici: un ambiente dedicato al training pratico proposto dai professionisti di GROHE.",
-    immagine: '/images/news/2023/grohe.jpeg'
+    titolo: 'Attrazione del mese ',
+    descrizione: "Vieni a provare la nuovissima  migliore attrazione del mese ",
+    immagine: 'https://www.cinematographe.it/wp-content/uploads/2022/06/Divertical_1_Mirabilandia.jpg'
   },
   {
-    titolo: 'Concorso nazionale settore elettrico',
-    descrizione: "A maggio il nostro Centro avrà l'onore di ospitare il Concorso Nazionale del Settore Elettrico: tutti i Centri di Formazione Professionale salesiani d'Italia invieranno i loro campioni per una settimana di sfida e condivisione professionale...",
-    immagine: '/images/news/2023/concorso-nazionale-elettrico.jpg'
+    titolo: 'Evento della settimana',
+    descrizione: "Il nostro fantastico evento",
+    immagine: 'https://www.riminidamare.it/it/blog/wp-content/uploads/BeachVillage.jpg'
   },
 ]
 
-let slides2 = [
-  {
-    titolo: 'Acqua della settimana',
-    descrizione: 'Argomento nel buongiorno della settimana',
-    immagine: '/images/news/2023/acqua-della-sett.jpg'
-  },
-  {
-    titolo: 'Gita a Torino delle classi prime e seconde',
-    descrizione: "In questa gita si visiterà tutta la città di Torino e l'oratorio Don Bosco",
-    immagine: '/images/news/2023/gita-torino.png'
-  },
-  {
-    titolo: 'Gita scolastica a Roma',
-    descrizione: "Con i nostri ragazzi più grandi visiteremo alcuni importanti posti nella magnifica città di Roma",
-    immagine: '/images/news/2023/gita-roma.jpg'
-  },
-]
+
 
 // Il nostro team
 let members = [
+ 
   {
-    name: "don Nicola Munari",
-    role: "DIRETTORE / CATECHISTA",
+    name: "Finotto Alessio",
+    role: "DIRETTORE",
     description: "And I love you like Kanye",
     description1: "loves Kanye. We need to restart the human foundation",
-    imageUrl: "https://media.gamerbrain.net/wp-content/uploads/2019/11/27094442/anima.jpg",
-    email: "c.coso@donboscosandona.it",
-    phone: '0421 3388949874950',
+    imageUrl: "https://www.essenzashop.it/wp-content/uploads/2022/01/A1-4.jpg",
+    email: "afinottoparco@gmail.com",
+    phone: '+39 387 2346 446',
   },
   {
-    name: "Alessandro Cappelletto",
-    role: "PRESIDE",
-    description: "And I love you like Kanye",
-    description1: "loves Kanye. We need to restart the human foundation",
-    imageUrl: "https://preview.redd.it/6ymh125pcra71.jpg?auto=webp&s=d0ec0c4112ca7a2a8f8228be3dfda0645091ac02",
-    email: "c.ciaoooo@donboscosandona.it",
-    phone: '123456',
+    name: "Thiago Alves Rodrigues",
+    role: "VICE-DIRETTORE",
+    description1: "Sono il vice direttore di questo parco acquatico e ogni anno ci da un sacco di soddisfazioni ",
+    imageUrl: "https://www.ginobaudino.it/abbigliamento/wp-content/uploads/2017/11/Digel-Smoking-Torino.jpg",
+    email: "alvesrodriguesparco@gmail.com",
+    phone: '+39 569 468 473',
   },
   {
-    name: "Alessandro Ferro",
-    role: "VICE-PRESIDE / TUTOR DIGITALE",
-    description1: "Vicepreside, gestione organizzazione scolastica e pastorale, insegnamento area scientifica ",
-    imageUrl: "/images/team/A_Ferro.png",
-
-    email: "a.ferro@donboscosandona.it",
-    phone: '0421 111 222',
-  },
-  {
-    name: "Anna Maria D'Ambrosio",
-    role: "RESPONSABILE DELLA DISCIPLINA",
-    description1: "Gestione disciplina,organizzazione scolastica e insegnamento are cultura",
-    imageUrl: "/images/team/A_dambrosio.png",
-    email: "l.hdggfd@donboscosandona.it",
-    phone: '12365598445',
-  },
-  {
-    name: "Roberta Toffoletto e Alessia Zanin",
-    role: "SEGRETERIA DIDATTICA",
-    description: "And I love you like Kanye",
-    description1: "loves Kanye. We need to restart the human foundation",
-    imageUrl: "/images/team/segretarie.png",
-    email: "c.cosocoso@donboscosandona.it",
-    phone: '0421 123456338 950',
-  },
-  {
-    name: "Andrea Pasqualetto",
-    role: "ORIENTAMENTO IN ENTRATA / SOSTEGNO",
-    description1: "Orientatore tutor, seguo la promozione e l’entrata dalla terza media alla classe prima superiore e monitoraggio allivi che incontrano difficoltà",
-    imageUrl: "/images/team/Pasqualetto.png",
-    email: "c.cosinocoso@donboscosandona.it",
-    phone: '123456 338 950',
-  },
-  {
-    name: "Francesco Cicogna",
-    role: "COORDINATORE STAGE / CORSI PER ADULTI",
-    description: "gestione delle attività con le aziende “stage ” e formazione continua si",
-    
-    imageUrl: "/images/team/cicogna.png",
-    email: "hhh.coso@donboscosandona.it",
+    name: "Enrico dalla Bella",
+    role: "SEGRETARIO",
+    description: "Sono il segretario di questo fantastico parco ",
+    imageUrl: "https://www.dhresource.com/0x0/f2/albu/g9/M00/BC/8F/rBVaVV62AzyAUyw5AADalmFo_jg898.jpg",
+    email: "enricodallaparco@gmail.com",
     phone: '0421 338 950',
   },
   {
-    name: "Martina Dianese",
-    role: "ORIENTAMENTO IN USCITA / SERVIZI AL LAVORO",
-    description1: "Orientamento e acompagniamento individuale, sportellò servizio al lavoro",
-    imageUrl: "/images/team/martina.png",
-    email: "c.coso@donboscosandona.it",
+    name: "Manuel Trevisan",
+    role: "GESTIONE ANIMATORI",
+    description1: "io gestisco gli animatori di questo fantastico parco",
+    imageUrl: "https://www.dailyman.it/wp-content/uploads/2019/02/Tendenze-moda-costumi-da-bagno-fantasia-militare.jpg",
+    email: "manueltreviparco@gmail.com",
     phone: '0421 338 950',
   },
 ]
@@ -157,32 +107,26 @@ let settori = [
     category: "Massima flessibilità : acquista ed entra Dreams-Island",
     description: "Installa ed effettua la manutenzione di impianti civili e industriali, sia con tecnologie tradizionali che automatizzate. Realizza la programmazione dei componenti domotici e dei controllori programmabili industriali.",
     immagineUrl: "https://www.acquaticapark.it/wp-content/uploads/2017/04/Foto-Acquatica-2016-Videoclip-044_foam-600x403.jpg",
-    url: "/elettrico"
+    
   },
   {
     title: "OPEN 2 GIORNI ",
     category: "Raddoppia il divertimento e risparmia ! ",
     description: "Interviene nell'installazione, collaudo e manutenzione di impianti termici, idraulici, di condizionamento e fotovoltaici, con una particolare attenzione al risparmio energetico, anche grazie alla building automation.",
     immagineUrl: "https://www.campingsalon.com/wp-content/uploads/2017/05/la-marina-3.jpg",
-    url: "/energia"
+   
   },
   {
     title: "SPECIAL LIMITED",
     category: "Miglior prezzo garantito ! ",
     description: "Installa e configura hardware e software, esegue la manutenzione di sistemi, reti e terminali utente, fornisce assistenza tecnica, effettua l'elaborazione e la manutenzione di dati su archivi digitali. Con il quarto anno in Sistema Duale diventa tecnico sviluppatore di Soluzioni Software.",
     immagineUrl: "https://www.camping-bellaitalia.it/inc/scripts/source/www.camping-bellaitalia.it/crp767x450-sf-acquapark.jpg?v=1681827398",
-    url: "/informatico"
+   
   },
   
 ]
 
-let postInEvidenza = {
-  titolo: 'Le folli notti di Bilal',
-  descrizione: 'Il dott. Bilal, noto migliardario pieno di schèi, passa le sue notti tra belle ragazze e partite a poker. Come inviati di donboscosandona siamo riusciti ad accedere a questo mondo esclusivo per raccontarvelo in prima persona...',
-  immagineUrl: 'https://media.istockphoto.com/id/522728130/it/foto/amici-divertirsi-giocando-a-poker.jpg?s=612x612&w=is&k=20&c=w2_p0SHrR_-cmURmZY9-dHXu3-qqVqN9QkdiZrgJpfc=',
-  testoimmagineUrl: 'Bilal seduto su un divanetto in mezzo a due tipe.',
-  testoUrl: 'Continua a leggere e scopri la cosa pazzesca che hanno fatto...',
-}
+
 
 const testimonials = [
   {
@@ -198,33 +142,14 @@ const testimonials = [
     social: "Recensioni Google"
   },
   {
-    imageUrl: "https://i.ibb.co/dpQrpNt/img3.jpg",
-    name: "Pino West",
-    text: "Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione Qui c'è una belissima descrizione ",
-    social: "@PINOWEST"
+    imageUrl: "https://static8.depositphotos.com/1593170/1055/i/450/depositphotos_10557263-stock-photo-young-beautiful-girl.jpg",
+    name: "Aurora rodrigues ",
+    text: "Dreams Island è uno dei migliori parchi acquatici in cui sono stato! L'atmosfera è divertente e rilassante allo stesso tempo, con un'ampia varietà di scivoli, piscine e zone relax. Abbiamo particolarmente apprezzato la zona per bambini, che è stata ben progettata e sicura per l'utilizzo dei nostri figli. Il personale era anche molto cordiale e accogliente. Non vediamo l'ora di tornare! ",
+    social: "Recensioni Google "
   },
 ]
 
-let certifications = [
-  {
-    logoUrl: '/images/certification/iso.png',
-    text1: 'ISO 9001:2015',
-    text2: 'Reg. n. 2593-A - Settore EA: 37'
-  },
-  {
-    logoUrl: '/images/certification/kiwa.png',
-    text1: 'Progettazione ed erogazione di attività formative e di orientamento'
-  },
-  {
-    logoUrl: '/images/certification/knx.png',
-    text1: 'Authorised Training Center'
-  },
-  {
-    logoUrl: '/images/certification/regioneveneto.png',
-    text1: 'Cod. A033 - Formazione Iniziale,',
-    text2: 'Superiore e Orientamento'
-  },
-]
+
 
 export default function Home({ datiArticoli }) {
   return (
@@ -236,9 +161,10 @@ export default function Home({ datiArticoli }) {
 
         Vieni a esplorare Ons Island e preparati per una giornata indimenticabile di divertimento e avventura. 🤩⁣⁣
         
-        Creiamo ricordi magici insieme a #DreamsIsland. Tagga un amico e inizia a pianificare il tuo prossimo viaggio oggi stesso!
+        Creiamo ricordi magici insieme a #DreamsIsland.________ COMPONENTI DEL GRUPPO: Alves Thiago; Sara Di Dio, Manuel Trevisan; Dalla Bella Enrico, Finotto Alessio. 
         
         "
+       
         imageUrl="https://static.secureholiday.net/static/CMS/photos/000/023/000023989.jpg?format=webp"
       />
       <Container maxWidth="lg" sx={{ marginTop: '3rem', marginBottom: '3rem' }}>
@@ -259,13 +185,7 @@ export default function Home({ datiArticoli }) {
         cardWidth={4}
         products={settori}
       />
-      <Carousel slides={slides2} />
-      <Features
-        title="I nostri punti di forza"
-        description="Scopri perché il CFP DON BOSCO è davvero la scuola che fa al caso tuo!"
-        features={features}
-        cardWidth={3}
-      />
+      
       <Testimonials
         testimonials={testimonials}
         cardWidth={4}
@@ -280,12 +200,9 @@ export default function Home({ datiArticoli }) {
       <Maps
         maxWidth='100%'
         maxHeight='550px'
-        url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5580.05343317009!2d12.5710658!3d45.6301996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477956fe076b4157%3A0x29fb231d47465883!2sCnos%20Fap%20Don%20Bosco!5e0!3m2!1sit!2sit!4v1680507660807!5m2!1sit!2sit"
+        url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23578.915703478204!2d-8.9342121!3d42.3773818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f44afad207c8b%3A0x299878e0962187e5!2sOns%20Island!5e0!3m2!1sen!2sit!4v1682073738353!5m2!1sen!2si"
       />
-      <Certifications
-        cardWidth={3}
-        certifications={certifications}
-      />
+      
     </Layout>
   )
 }
